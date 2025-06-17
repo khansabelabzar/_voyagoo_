@@ -1,0 +1,122 @@
+<!-- marrakech.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Marrakech Tourist Guide</title>
+</head>
+  
+<style>
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #1a3a3a;
+    text-align: center;
+    padding: 2rem;
+    color: white;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+    color: #2a9d8f;
+    margin-bottom: 0.5rem;
+  }
+
+  .custom-title {
+    font-size: 4rem; /* Bigger than default h1 */
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+  }
+
+
+  .subtitle {
+    font-size: 1.8rem;
+    background-color: #2a9d8f;
+    display: inline-block;
+    padding: 0.4rem 1rem;
+    border-radius: 10px;
+    color: white;
+    margin-bottom: 3rem;
+  }
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+    gap: 20px;
+  }
+
+  .circle {
+    background-color: #fff;
+    border-radius: 50%;
+    width: 240px;
+    height: 240px;
+    margin: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* stronger shadow */
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s;
+  }
+
+  .circle:hover {
+    transform: scale(1.05); /* optional pop effect on hover */
+  }
+
+  .circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+
+  .circle p {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #2a9d8f;
+    padding: 0.4rem 1rem;
+    border-radius: 10px;
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+
+  .link {
+    text-decoration: none;
+    color: inherit;
+    font-weight: bold;
+  }
+</style>
+
+
+<body>
+  <h1 class="custom-title">SAHARA</h1>
+  <div class="subtitle">5 places to visit</div>
+  <div class="container">
+    <div class="circle">
+      <img src="src/Merzouga & Erg Chebbi Dunes.jpeg" alt="Merzouga Dunes" />
+      <p>Merzouga Dunes</p>
+    </div>
+    <div class="circle">
+      <img src="src/zagora.jpeg" alt="Zagora Desert" />
+      <p>Zagora Desert</p>
+    </div>
+    <div class="circle">
+      <img src="src/A M'Hamid___.jpeg" alt="M’Hamid El Ghizlane" />
+      <p>M’Hamid El Ghizlane</p>
+    </div>
+    <div class="circle">
+      <img src="src/Erfoud.jpeg" alt="Erfoud Fossils" />
+      <p>Erfoud Fossils</p>
+    </div>
+    <div class="circle">
+      <img src="src/The Ozoud Waterfalls of Morocco_ Rainbows and Monkeys.jpeg" alt="Tinfou Dunes" />
+      <p>Tinfou Dunes</p>
+    </div>
+  </div>
+
+</body>
+</html>

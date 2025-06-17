@@ -1,0 +1,546 @@
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Voyagoo - Moroccan Travel Guide</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<script src="https://lib.youware.com/youware-lib.1747145198.js" id="yourware-lib"></script></head>
+
+<body __processed_c95b2673-7f6b-4629-a274-7f2f915923ea__="true">
+  <!-- Header Section -->
+  <header>
+    <div class="container header-container">
+      <a href="#" class="logo">
+        <img src="src_final/logoo.png" alt="Voyagoo Logo" class="logo-img">
+        Voyag<span>oo</span>
+      </a>
+      <nav>
+              <ul>
+                  <li><a href="#trip-planner">Trip Planner</a></li>
+                  <li><a href="#destinations">Destinations</a></li>
+                  <li><a href="#packing">What to Pack</a></li>
+                  <li><a href="#map">Map</a></li>
+                  <li><a href="#stories">Stories</a></li>
+                  <li><a href="#quiz">Food Quiz</a></li>
+                  <li><a href="#downloads">Downloads</a></li>
+              </ul>
+              <div class="hamburger">
+                  <div class="line1"></div>
+                  <div class="line2"></div>
+                  <div class="line3"></div>
+              </div>
+          </nav>
+      </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+      <div class="container">
+          <div class="hero-content">
+              <h1>Discover the Magic of Morocco</h1>
+              <p>From vibrant medinas to sweeping desert dunes, experience the rich culture, delicious cuisine, and breathtaking landscapes of Morocco.</p>
+              <a href="#trip-planner" class="cta-btn">Plan Your Journey</a>
+          </div>
+      </div>
+  </section>
+
+  <!-- Trip Planner Section -->
+  <section class="trip-planner">
+    <h1>Trip Planner</h1>
+  
+    <form class="planner-form" id="plannerForm">
+      <div class="form-group">
+        <label for="citySelect">Select Cities to Visit (Hold Ctrl/Cmd to select multiple):</label>
+        <select id="citySelect" multiple class="select-multiple" required>
+          <option value="Casablanca">Casablanca</option>
+          <option value="Fes">Fes</option>
+          <option value="Chefchaouen">Chefchaouen</option>
+          <option value="Sahara Desert">Sahara Desert</option>
+          <option value="Marrakech">Marrakech</option>
+          <option value="Rabat">Rabat</option>
+          <option value="Agadir">Agadir</option>
+          <option value="Tangier">Tangier</option>
+        </select>
+      </div>
+  
+      <div class="form-group">
+        <label for="numDays">Number of Days:</label>
+        <input type="number" id="numDays" value="7" min="1" max="30" required />
+      </div>
+  
+      <div class="form-group">
+        <button type="submit" class="download-btn">Generate Itinerary</button>
+      </div>
+    </form>
+  
+    <div class="itinerary-result" id="itineraryResult">
+      <h2>Your Personalized Morocco Itinerary</h2>
+      <div id="itineraryDays"></div>
+    </div>
+  </section>
+
+
+<!-- Destinations Section -->
+<section id="destinations" class="section-padding">
+      <div class="container">
+        <div class="section-title">
+          <h2>Popular Destinations</h2>
+            <p>Explore the diverse cities and landscapes that make Morocco a magical destination.</p>
+          </div>
+          <div class="card-container">
+
+          <a href="sahara.html" class="card">
+            <img src="src_final/card1.jpg" alt="Sahara" class="card-img">
+            <div class="card-img-overlay">
+              <h5 class="card-title">Sahara</h5>
+              <p class="card-text">A big, sandy desert with tall dunes, camels, and beautiful sunsets.</p>
+            </div>
+          </a>
+            
+          <a href="chefchaouen.html" class="card">
+            <img src="src/chefchaouen.jpeg" alt="Chefchaouen" class="card-img">
+            <div class="card-img-overlay">
+              <h5 class="card-title">Chefchaouen</h5>
+              <p class="card-text">The blue pearl of Morocco, nestled in the mountains.</p>
+            </div>
+          </a>
+
+
+          <a href="casablanca.html" class="card">
+            <img src="src/casablancaa.jpeg" class="card-img" alt="Casablanca">
+            <div class="card-img-overlay">
+              <h5 class="card-title">Casablanca</h5>
+              <p class="card-text">A busy city by the ocean, known for its big mosque and modern life.</p>
+            </div>
+          </a>
+
+          <a href="agadir.html" class="card">
+            <img src="src/agadir1.jpeg" class="card-img" alt="Agadir">
+            <div class="card-img-overlay">
+              <h5 class="card-title">Agadir</h5>
+              <p class="card-text">A beach resort city popular for its seaside atmosphere and modern feel.</p>
+            </div>
+          </a>
+
+          <a href="tangier.html" class="card">
+            <img src="src/tanier.jpeg" class="card-img" alt="Tangier">
+            <div class="card-img-overlay">
+              <h5 class="card-title">Tangier</h5>
+              <p class="card-text">A cosmopolitan port city with a mix of cultures and Mediterranean views.</p>
+            </div>
+          </a>
+
+          <a href="Marrakech.html" class="card">
+            <img src="src/marakech.jpeg" class="card-img" alt="Marrakech">
+            <div class="card-img-overlay">
+              <h5 class="card-title">Marrakech</h5>
+              <p class="card-text">Known for its lively markets & historic architecture.</p>
+            </div>
+          </a>
+
+          <a href="rabat.html" class="card">
+            <img src="src/Rabat - Maroc.jpeg" class="card-img" alt="Rabat">
+            <div class="card-img-overlay">
+              <h5 class="card-title">Rabat</h5>
+              <p class="card-text">The capital city, with old buildings, gardens, and a peaceful seaside.</p>
+            </div>
+          </a>
+
+          <a href="fes.html" class="card">
+            <img src="src/fes.jpeg" class="card-img" alt="Fez">
+            <div class="card-img-overlay">
+              <h5 class="card-title">Fez</h5>
+              <p class="card-text">Famous for its ancient medina & cultural heritage.</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+       
+          
+
+  <!-- Packing List Section -->
+  
+  <section id="what-to-pack" class="trip-planner">
+    <div class="section-title">
+      <h2>What to Pack</h2>
+      <p>Make sure you're well-prepared for your Moroccan adventure!</p>
+    </div>
+  
+    <div class="planner-form">
+      <div class="form-group">
+        <label>Essentials</label>
+        <ul class="packing-list">
+          <li>🧴 Sunscreen</li>
+          <li>🕶️ Sunglasses</li>
+          <li>🧢 Hat or cap</li>
+          <li>💧 Reusable water bottle</li>
+          <li>🧻 Tissues & hand sanitizer</li>
+        </ul>
+      </div>
+  
+      <div class="form-group">
+        <label>Clothing</label>
+        <ul class="packing-list">
+          <li>👕 Light layers for the day</li>
+          <li>🧥 Jacket for the cool nights</li>
+          <li>🥿 Comfortable walking shoes</li>
+          <li>🧣 Scarf or shawl (for sun & mosques)</li>
+        </ul>
+      </div>
+  
+      <div class="form-group">
+        <label>Tech & Docs</label>
+        <ul class="packing-list">
+          <li>📱 Phone & charger</li>
+          <li>🔌 Travel adapter</li>
+          <li>🪪 Passport & visa (if needed)</li>
+          <li>💳 Credit/debit card & some cash</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  
+
+
+
+
+
+  <!-- Map Section -->
+  <section id="map" class="section-padding">
+      <div class="container">
+          <div class="section-title">
+              <h2>Morocco Map</h2>
+              <p>Explore key locations, landmarks, and Instagram-worthy spots in Morocco.</p>
+          </div>
+          <div class="map-container">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6770889.897522244!2d-11.717231431561394!3d31.80665098457638!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd0b88619651c58d%3A0xd9d39381c42cffc3!2sMorocco!5e0!3m2!1sen!2sus!4v1655061732014!5m2!1sen!2sus" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+      </div>
+  </section>
+
+  <!-- Stories & Legends Section -->
+
+  <section id="stories" class="section-padding">
+      <div class="container">
+          <div class="section-title">
+              <h2>Stories &amp; Legends</h2>
+              <p>Discover the rich folklore and fascinating tales that have shaped Moroccan culture through centuries.</p>
+          </div>
+          <div class="stories-container">
+              <div class="story-card">
+                  <h3>The Legend of Aisha Kandisha</h3>
+                  <p>Aisha Kandisha is a female jinn (supernatural creature) in Moroccan folklore who is said to live near water sources. Legend says she appears as a beautiful woman with camel feet who enchants men. Mothers often warn their children not to play near water at night to avoid encountering her.</p>
+                  <div class="story-votes">
+                      <button class="vote-btn">
+                          <i class="fas fa-thumbs-up"></i> <span class="vote-count"></span>
+                      </button>
+                      <button class="vote-btn">
+                          <i class="fas fa-thumbs-down"></i> <span class="vote-count"></span>
+                      </button>
+                  </div>
+              </div>
+              
+              <div class="story-card">
+                  <h3>The Seven Saints of Marrakech</h3>
+                  <p>Marrakech is known as the "City of Seven Saints," honoring seven Sufi spiritual leaders. Each year, a pilgrimage takes place visiting the tombs of these saints. Legend says that their blessings protect the city from harm, and many locals still visit these shrines to seek blessings.</p>
+                  <div class="story-votes">
+                      <button class="vote-btn">
+                          <i class="fas fa-thumbs-up"></i> <span class="vote-count"></span>
+                      </button>
+                      <button class="vote-btn">
+                          <i class="fas fa-thumbs-down"></i> <span class="vote-count"></span>
+                      </button>
+                  </div>
+              </div>
+              
+              <div class="story-card">
+                  <h3>The Blue City's Origin</h3>
+                  <p>Why is Chefchaouen blue? One legend claims Jewish refugees painted the city blue in the 1930s, as blue represents heaven in Judaism. Others say the color keeps mosquitoes away or that it keeps houses cool. The most poetic explanation is that the blue represents the color of the sky and the nearby Mediterranean Sea.</p>
+                  <div class="story-votes">
+                      <button class="vote-btn">
+                          <i class="fas fa-thumbs-up"></i> <span class="vote-count"></span>
+                      </button>
+                      <button class="vote-btn">
+                          <i class="fas fa-thumbs-down"></i> <span class="vote-count"></span>
+                      </button>
+                  </div>
+              </div>
+              
+              <div class="story-card">
+                  <h3>The Curse of Benhaddou</h3>
+                  <p>The ancient fortified city of Ait Benhaddou is rumored to be protected by a powerful curse. According to local legend, anyone who takes a stone from the kasbah will face misfortune until the stone is returned. Tour guides tell of letters they receive from tourists mailing back stones they took, hoping to end their string of bad luck.</p>
+                  <div class="story-votes">
+                      <button class="vote-btn">
+                          <i class="fas fa-thumbs-up"></i> <span class="vote-count"></span>
+                      </button>
+                      <button class="vote-btn">
+                          <i class="fas fa-thumbs-down"></i> <span class="vote-count"></span>
+                      </button>
+                  </div>
+              </div>
+              
+              <div class="story-card">
+                  <h3>The Berber Romeo and Juliet</h3>
+                  <p>In the Atlas Mountains, there's a tale of forbidden love between a Berber girl and an Arab boy from rival tribes. When their families discovered their secret meetings, they were forbidden to see each other. They attempted to escape together but died in a snowstorm. It's said that two adjacent peaks in the mountains represent their eternal love.</p>
+                  <div class="story-votes">
+                      <button class="vote-btn">
+                          <i class="fas fa-thumbs-up"></i> <span class="vote-count"></span>
+                      </button>
+                      <button class="vote-btn">
+                          <i class="fas fa-thumbs-down"></i> <span class="vote-count"></span>
+                      </button>
+                  </div>
+              </div>
+              
+              <div class="story-card">
+                  <h3>The Treasure of Fes Medina</h3>
+                  <p>Deep within the 9,000+ winding streets of Fes Medina, legend speaks of a hidden treasure chamber filled with gold from ancient trading caravans. The treasure is said to be protected by jinns and can only be found by those pure of heart who aren't seeking wealth. Some say the treasure doesn't exist in material form but is the ancient knowledge preserved in the city's libraries.</p>
+                  <div class="story-votes">
+                      <button class="vote-btn">
+                          <i class="fas fa-thumbs-up"></i> <span class="vote-count"></span>
+                      </button>
+                      <button class="vote-btn">
+                          <i class="fas fa-thumbs-down"></i> <span class="vote-count"></span>
+                      </button>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Food Quiz Section -->
+  <section class="section-padding" >
+    <div id="quiz">
+        <div class="section-title">
+            <h2>Which Moroccan &amp; Dish Are You?</h2>
+            <p>Take this fun quiz to discover which iconic Moroccan dish matches your personality!</p>
+        </div>
+        <div class="quiz-section" id="quiz">
+
+            <div class="quiz-question">
+                <h3>1. What is your favorite way to spend a weekend?</h3>
+            <div class="quiz-options">
+            <div class="quiz-option" data-value="tajine1">Relaxing with family at home</div>
+            <div class="quiz-option" data-value="couscous1">Going out with friends</div>
+            <div class="quiz-option" data-value="mintTea1">Trying new activities</div>
+            <div class="quiz-option" data-value="pastilla1">Exploring new cultures</div>
+        </div>
+        </div>
+        
+        <div class="quiz-question">
+            <h3>2. Which of these traits describes you best?</h3>
+            <div class="quiz-options">
+            <div class="quiz-option" data-value="tajine2">Patient and caring</div>
+            <div class="quiz-option" data-value="couscous2">Adaptable and social</div>
+            <div class="quiz-option" data-value="mintTea2">Energetic and lively</div>
+            <div class="quiz-option" data-value="pastilla2">Creative and bold</div>
+          </div>
+        </div>
+      
+        <div class="quiz-question">
+            <h3>3. What kind of music do you prefer?</h3>
+            <div class="quiz-options">
+                <div class="quiz-option" data-value="tajine3">Classical and calm</div>
+            <div class="quiz-option" data-value="couscous3">Pop and upbeat</div>
+            <div class="quiz-option" data-value="mintTea3">Dance and energetic</div>
+            <div class="quiz-option" data-value="pastilla3">Eclectic and unique</div>
+          </div>
+        </div>
+      
+        <button id="submitQuiz" class="cta-btn">Submit</button>
+      
+        <div class="quiz-result" style="display:none; margin-top: 20px;">
+          <h2 id="resultTitle"></h2>
+          <img id="resultImage" src="" alt="Result Image" style="max-width: 300px; display: block; margin: 10px 0; position: center;">
+          <p id="resultDescription"></p>
+          <button id="retakeBtn" class="cta-btn">Retake Quiz</button>
+        </div>
+        </div>
+        </div>
+      
+  </section>
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Downloads Section -->
+  <section id="downloads" class="section-padding">
+      <div class="container">
+          <div class="section-title">
+              <h2>Downloadable Content</h2>
+              <p>Free postcards and wallpapers to keep Morocco close to your heart.</p>
+          </div>
+          <div class="downloads-container">
+            <body>
+                <div class="downloads-container">
+                    <!-- Download Card for Postcard -->
+                    <div class="download-card">
+                        <div class="download-card-inner">
+                            <div class="download-front">
+                                <div class="download-img">
+                                    <img src="src/agadir1.jpeg" alt="Chefchaouen Postcard">
+                                </div>
+                                <div class="download-content">
+                                    <h3>Chefchaouen Postcard</h3>
+                                    <p>The Blue Pearl of Morocco</p>
+                                </div>
+                            </div>
+                            <div class="download-back">
+                                <h3>Chefchaouen Postcard</h3>
+                                <p>High-resolution printable postcard of Morocco's famous blue city.</p>
+                                <button class="download-btn" onclick="downloadPostcard()">Download</button>
+                            </div>
+                        </div>
+                    </div>
+              
+              <div class="download-card">
+                  <div class="download-card-inner">
+                      <div class="download-front">
+                          <div class="download-img">
+                              <img src="https://public.youware.com/users-website-assets/prod/6617000a-0003-4406-a25d-516aa675a951/desert-3436700_1280.jpg" alt="Sahara Wallpaper">
+                          </div>
+                          <div class="download-content">
+                              <h3>Sahara Wallpaper</h3>
+                              <p>The Mystical Desert</p>
+                          </div>
+                      </div>
+                      <div class="download-back">
+                          <h3>Sahara Wallpaper</h3>
+                          <p>Beautiful desktop wallpaper featuring Morocco's majestic Sahara Desert.</p>
+                          <button onclick="downloadContent('https://public.youware.com/users-website-assets/prod/6617000a-0003-4406-a25d-516aa675a951/desert-3436700_1280.jpg', 'Sahara_Wallpaper.jpg')" class="download-btn">
+                              <i class="fas fa-download"></i> Download
+                          </button>
+                      </div>
+                  </div>
+              </div>
+              
+              <div class="download-card">
+                  <div class="download-card-inner">
+                      <div class="download-front">
+                          <div class="download-img">
+                              <img src="https://public.youware.com/users-website-assets/prod/6617000a-0003-4406-a25d-516aa675a951/mosque-4134459_1280.jpg" alt="Casablanca Postcard">
+                          </div>
+                          <div class="download-content">
+                              <h3>Casablanca Postcard</h3>
+                              <p>Hassan II Mosque</p>
+                          </div>
+                      </div>
+                      <div class="download-back">
+                          <h3>Casablanca Postcard</h3>
+                          <p>Printable postcard featuring Casablanca's iconic Hassan II Mosque.</p>
+                          <button onclick="downloadContent('https://public.youware.com/users-website-assets/prod/6617000a-0003-4406-a25d-516aa675a951/mosque-4134459_1280.jpg', 'Casablanca_Postcard.jpg')" class="download-btn">
+                              <i class="fas fa-download"></i> Download
+                          </button>
+                      </div>
+                  </div>
+              </div>
+              
+              <div class="download-card">
+                  <div class="download-card-inner">
+                      <div class="download-front">
+                          <div class="download-img">
+                              <img src="https://public.youware.com/users-website-assets/prod/6617000a-0003-4406-a25d-516aa675a951/morocco-5271734_1280.jpg" alt="Camel Caravan Wallpaper">
+                          </div>
+                          <div class="download-content">
+                              <h3>Camel Caravan Wallpaper</h3>
+                              <p>Desert Adventure</p>
+                          </div>
+                      </div>
+                      <div class="download-back">
+                          <h3>Camel Caravan Wallpaper</h3>
+                          <p>Stunning wallpaper of a camel caravan traversing the Moroccan desert.</p>
+                          <button onclick="downloadContent('https://public.youware.com/users-website-assets/prod/6617000a-0003-4406-a25d-516aa675a951/morocco-5271734_1280.jpg', 'Camel_Caravan_Wallpaper.jpg')" class="download-btn">
+                              <i class="fas fa-download"></i> Download
+                          </button>
+                       
+                      </div>
+                    
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+      <footer>
+<div class="container">
+  <div class="footer-content">
+    <div class="footer-about">
+      <a href="#" class="footer-logo">Voyag<span>oo</span></a>
+      <p>Voyagoo is your ultimate guide to exploring the magic and mystery of Morocco.</p>
+    </div>
+
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#trip-planner">Trip Planner</a></li>
+        <li><a href="#destinations">Destinations</a></li>
+        <li><a href="#packing">What to Pack</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-links">
+      <h4>More</h4>
+      <ul>
+        <li><a href="#map">Map</a></li>
+        <li><a href="#stories">Stories & Legends</a></li>
+        <li><a href="#quiz">Food Quiz</a></li>
+        <li><a href="#downloads">Downloads</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-links">
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="mailto:smartkhansae@gmail.com">smartkhansae@gmail.com</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms of Service</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 Voyagoo. All Rights Reserved.</p>
+    <button id="backToTop" title="Go to top" class="cta-btn">↑ Back to Top</button>
+  </div>
+</div>
+</footer>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>

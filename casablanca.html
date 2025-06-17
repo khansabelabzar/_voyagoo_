@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Casablanca Tourist Guide</title>
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #1a3a3a;
+      text-align: center;
+      padding: 2rem;
+      color: white;
+    }
+
+    h1 {
+      font-size: 3.5rem;
+      color: #2a9d8f;
+      margin-bottom: 0.5rem;
+    }
+
+    .custom-title {
+      font-size: 4rem; /* Bigger than default h1 */
+      font-weight: bold;
+      text-transform: uppercase;
+      color: white;
+    }
+
+
+    .subtitle {
+      font-size: 1.8rem;
+      background-color: #2a9d8f;
+      display: inline-block;
+      padding: 0.4rem 1rem;
+      border-radius: 10px;
+      color: white;
+      margin-bottom: 3rem;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 20px;
+      gap: 20px;
+    }
+
+    .circle {
+      background-color: #fff;
+      border-radius: 50%;
+      width: 240px;
+      height: 240px;
+      margin: 20px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* stronger shadow */
+      position: relative;
+      overflow: hidden;
+      transition: transform 0.3s;
+    }
+
+    .circle:hover {
+      transform: scale(1.05); /* optional pop effect on hover */
+    }
+
+    .circle img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+
+    .circle p {
+      position: absolute;
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #2a9d8f;
+      padding: 0.4rem 1rem;
+      border-radius: 10px;
+      color: white;
+      font-size: 1rem;
+      font-weight: 500;
+    }
+
+    .link {
+      text-decoration: none;
+      color: inherit;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  
+  <h1 class="custom-title">CASABLANCA</h1>
+  <div class="subtitle">5 places to visit</div>
+
+  <div class="container">
+    <a href="hassan-mosque.html" class="link">
+      <div class="circle">
+        <img src="src_final/mosque2.jpeg" alt="Hassan-II mosque" />
+        <p>Hassan-II mosque</p>
+      </div>
+    </a>
+
+    <a href="morocco-mall.html" class="link">
+      <div class="circle">
+        <img src="src_final/moroco_mall.jpeg" alt="Morocco Mall" />
+        <p>Morocco Mall</p>
+      </div>
+    </a>
+
+    <a href="ligue-parc.html" class="link">
+      <div class="circle">
+        <img src="src_final/ligua1.jpeg" alt="Ligue Arabe Parc" />
+        <p>Ligue Arabe Parc</p>
+      </div>
+    </a>
+
+    <a href="mahkama.html" class="link">
+      <div class="circle">
+        <img src="src_final/mahkama_bacha.jpeg" alt="Mahkama of Pacha" />
+        <p>Mahkama of Pacha</p>
+      </div>
+    </a>
+
+    <a href="sindibad.html" class="link">
+      <div class="circle">
+        <img src="src_final/sindibad1.jpeg" alt="Sindibad Parc" />
+        <p>Sindibad Parc</p>
+      </div>
+    </a>
+  </div>
+
+</body>
+</html>
