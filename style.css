@@ -930,12 +930,17 @@ footer {
   height: 40px;
   width: auto;
 }
+
+
 .card-container {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
-  padding: 20px 0;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+
 }
 
 .card {
@@ -990,6 +995,19 @@ footer {
   }
 }
 
+/* Responsive: 2 cards per row for medium screens */
+@media (max-width: 900px) {
+  .card {
+    width: calc(50% - 20px); /* 2 per row */
+  }
+}
+
+/* Responsive: 1 card per row on small screens */
+@media (max-width: 600px) {
+  .card {
+    width: 100%; /* Full width */
+  }
+}
 
 
 .vote-btn {
